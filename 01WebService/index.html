@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <!-- html 에는 크게 두개의 영역이 있다 -->
+    <!-- 1. 화면에 안보이는 영역 : head -->
+    <head>
+        <title>이건 내 웹페이지여</title>
+
+        <!-- 3. 기본적으로 한글은 깨진다. 단, 요즘 브라우저는 개선되었다.
+        그래도 인코딩관련 속성을 써놓는걸 권장한다 -->
+        <meta charset="utf-8">
+        <!-- 4. 스타일 작업 : CSS 라는 언어문법을 사용한다 -->
+        <!-- <style>
+            /* <style> 태그문 안에서는 html 문법이 아니라 css 문법체계를 따른다.  */
+
+        </style> -->
+
+        <!-- 8. 외부에 만든 스타일 시트 .css 파일 연결 -->
+        <link rel="stylesheet" href="index.css">
+
+        <!-- <script>
+            // 5. 이 <script>라는 영역 안에서는 JS 언어문법 체계를 따름
+                function show(){
+                    alert("로그인 성공"); // 6. 이게 다이얼로그를 보여주는 함수다!
+                }
+
+                function changeImage(){
+                    // 7. 이미지를 가지고 있는 요소(img)를 찾아오자.
+                    var imageElement = document.getElementById("img");
+                    imageElement.src="bg_one10.jpg"
+
+                }
+        </script> -->
+        <!-- 9. 외부에서 만든 JS 파일 .js 를 연동하자 -->
+        <script src="index.js"></script>
+    </head>
+
+    <!-- 2. 주소창 아래 화면에 보이는 영역 : body -->
+    <body>
+        <h2>조 성 건</h2>
+        <p>Hello</p>
+        <img id="img" src="./bg_one04.jpg">
+        <br>
+        <button onclick="show()">로그인</button>
+        <button onclick="changeImage()">이미지 변경</button>
+    </body>
+</html>
