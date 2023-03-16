@@ -20,5 +20,6 @@
     $arr['name'] = $name;
     $arr['msg'] = $message;
     $arr['age'] = $age;
+    
     echo json_encode($arr);
 ?>
